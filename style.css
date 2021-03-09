@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  height: 100vh;
+  font-size: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.description__title {
+  color: hsl(300, 43%, 22%);
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description__text {
+  color: hsl(303, 10%, 53%);
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.card__rating {
+  list-style: none;
+}
+
+.rating__item {
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem 2.5rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.card__rating--stars {
+  background-image: url(./images/icon-star.svg);
+  background-position: left center;
+  background-repeat: repeat-x;
+  width: 115px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.card__rating--text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.card__opinion {
+  margin: 2rem auto;
+}
+
+.opinion {
+  background-color: hsl(300, 43%, 22%);
+  margin: 1rem auto;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+img {
+  position: relative;
+  top: 5px;
+}
+
+.opinion {
+  list-style: none;
+}
+
+.opinion > img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.opinion__heading {
+  display: inline-block;
+  padding-bottom: 2rem;
+}
+
+.opinion__name--bolded {
+  color: white;
+  font-weight: 700;
+  padding: 0 0 0.3rem 1.5rem;
+}
+
+.opinion__status--colored {
+  color: hsl(333, 80%, 67%);
+  padding: 0 0 0 1.5rem;
+}
+
+.opinion__text {
+  color: white;
+}
+
+@media (min-width: 1040px) {
+  .card {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 5rem 1rem 5rem;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .card__description {
+    width: 550px;
+  }
+
+  .description__title {
+    max-width: 335px;
+    text-align: left;
+    margin: 0;
+    font-size: 2.3rem;
+  }
+
+  .description__text {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-right: 4rem;
+  }
+
+  .rating__item {
+    display: flex;
+  }
+
+  .rating__item:nth-child(2) {
+    position: relative;
+    left: 60px;
+  }
+
+  .rating__item:nth-child(3) {
+    position: relative;
+    left: 120px;
+  }
+
+  .card__rating--stars {
+    min-width: 115px;
+  }
+
+  .card__rating--text {
+    padding: 0;
+  }
+
+  .card__opinion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 5rem 3rem 5rem;
+    margin-top: 0;
+  }
+
+  .opinion {
+    max-width: 425px;
+    margin: 1rem;
+  }
+
+  .opinion:nth-child(2) {
+    position: relative;
+    top: 20px;
+  }
+
+  .opinion:nth-child(3) {
+    position: relative;
+    top: 40px;
+  }
+}
